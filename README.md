@@ -21,7 +21,9 @@ python --version
 
 ### 2. pip (Python package manager)
 
+```bash
 pip --version
+```
 
 ### 3. Git
 
@@ -94,11 +96,11 @@ curl -X POST http://localhost:8000/predict \
 
 5. (Optional) Run the evaluation script
 
-From ./Assignment5_ModelMonitoring:
+    From ./Assignment5_ModelMonitoring:
 
-```bash
-python evaluate.py
-```
+    ```bash
+    python evaluate.py
+    ```
 
 This will request responses from the API server via JSON body objects, using the test.json file
 
