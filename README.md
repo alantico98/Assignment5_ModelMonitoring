@@ -69,30 +69,30 @@ make build
 make run
 ```
 
-This will:
-* Start the FastAPI app on http://localhost:8000
-* Start the Streamlit Dashboard on http://localhost:8501
-* Create a named Docker volume sentiment-logs
+    This will:
+    * Start the FastAPI app on http://localhost:8000
+    * Start the Streamlit Dashboard on http://localhost:8501
+    * Create a named Docker volume sentiment-logs
 
-If using Postman Desktop:
-* Send a request to http://0.0.0.0:8000/health to check that the server is running and healthy
+    If using Postman Desktop:
+    * Send a request to http://0.0.0.0:8000/health to check that the server is running and healthy
 
-To use **curl** to interact with the API:
-* Health Check:
+    To use **curl** to interact with the API:
+    * Health Check:
 
-```bash
-curl -X GET http://localhost:8000/health
-```
+    ```bash
+    curl -X GET http://localhost:8000/health
+    ```
 
-* Predict Sentiment"
+    * Predict Sentiment"
 
-```bash
-curl -X POST http://localhost:8000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"text": "I loved this movie!", "true_label": "positive"}'
-```
+    ```bash
+    curl -X POST http://localhost:8000/predict \
+    -H "Content-Type: application/json" \
+    -d '{"text": "I loved this movie!", "true_label": "positive"}'
+    ```
 
-* Example response: {"sentiment": "positive"}
+    * Example response: {"sentiment": "positive"}
 
 5. (Optional) Run the evaluation script
 
